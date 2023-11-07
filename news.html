@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+  <h1>specTHEAcular</h1>
+  <img src="logo.png" alt="Logo" class="logo">
+  </div>
+<div class="sidenav">
+  <a class="active" href="home.html">Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">PROFILE</button>
+  <div class="dropdown-content">
+    <a href="profile.html">Profile</a>
+    <a href="pictures.html">Pictures</a>
+    <a href="videos.html">Videos</a>
+  </div>
+  </div>
+  <a href="contacts.html">CONTACTS</a>
+  <a href="about.html">ABOUT</a>
+  <a href="news.html">NEWS</a>
+</div>
+
+<div class="main">
+  <h2 style="font-size:15px;">ILOCOS SUR POLYTECHNIC STATE COLLEGE</h2>
+  <h5>COLLEGE OF COMPUTING STUDIES' NEWS FILES</h5>
+  <h6>"The good news about computers is that they do what you tell them to do. The bad news is that they do what you tell the6 to do."</h4>
+  
+  <article>
+  <h5>CSP National Mental Health Week Campaign</h5>
+  <p style="font-size:15px;">LOOK: Technocrats actively participated in the National Mental Health Week Campaign spearheaded by the Office of 
+  Guidance Counseling and Services, which was held today, October 10, at the college gymnasium. <a href="https://m.facebook.com/story.php?story_fbid=pfbid0YuFrkYxKx77z2dVYm6KnhCiuvs1zWgVDw5kcKDtbyNcUNfBjnSTrJyxZmJetsPCYl&id=61551472926598&mibextid=Nif5oz">Visit here Technocrat!</a></p>
+</article>
+
+<article>
+  <h5>CSP Teacher's Day Celebration</h5>
+  <p style="font-size:15px;">From cultural shows to team-building exercises and sporting activities, WE  HAVE IT ALL. <a href="https://m.facebook.com/story.php?story_fbid=pfbid0CS2tr7bFomXrzS2RD4QmbGTk9nWut2vs7R2uS8Pj1WWeNokuhEpUixAP5j8hSUidl&id=61551472926598&mibextid=Nif5oz">Visit here Technocrat!</a></p>
+</article>
+
+<article>
+  <h5>CSP TECHNOCRATS SHINE WITH POETIC BRILLIANCE
+</h5>
+  <p style="font-size:15px;">ISPSC Santa Maria Campus - Two technocrats delivered their evocative words, which resonated with the judges and audience alike for the Spoken Poetry competition during the Teachers' Day Celebration on October 6 at the College Gymnasium.<a href="https://m.facebook.com/story.php?story_fbid=pfbid0DrpD1jgRWeBLA42HU8aXSYwcxzpNa391UAYuhQkuvBHxhHBQoDRTMJZ4pJ7V54Z6l&id=61551472926598&mibextid=Nif5oz">Visit here Technocrat!</a></p>
+</article>
+
+<article>
+  <h5>CSP 𝐏𝐀𝐃𝐀𝐘𝐎𝐍 𝐈𝐒𝐏𝐒𝐂 𝗖𝗦𝗣 𝗢𝗙𝗙𝗜𝗖𝗘𝗥𝗦 2023-2024</h5>
+  <p style="font-size:15px;">The College of Computing Studies (CCS) proudly presents the newly elected Computing Society of the Philippines (CSP) Officers of Ilocos Sur Polytechnic State College - Sta. Maria Campus A.Y. 2023-2024. <a href="https://m.facebook.com/story.php?story_fbid=pfbid0CS2tr7bFomXrzS2RD4QmbGTk9nWut2vs7R2uS8Pj1WWeNokuhEpUixAP5j8hSUidl&id=61551472926598&mibextid=Nif5oz">Visit here Technocrat!</a></p>
+</article>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+<div class="footer">
+ <p>All Rights Reserved</p>
+</div>
+</body>
+</html> 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+  <h1>specTHEAcular</h1>
+  <img src="logo.png" alt="Logo" class="logo">
+  </div>
+<div class="sidenav">
+  <a class="active" href="home.html">Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">PROFILE</button>
+  <div class="dropdown-content">
+    <a href="profile.html">Profile</a>
+    <a href="pictures.html">Pictures</a>
+    <a href="videos.html">Videos</a>
+  </div>
+  </div>
+  <a href="contacts.html">CONTACTS</a>
+  <a href="about.html">ABOUT</a>
+  <a href="news.html">NEWS</a>
+</div>
+
+<div class="main">
+<h2 style="font-size:30px;">This is Thea's About!</h2>
+  <h3>"Let your attitude be your voice"</h3>
+  <p style="font-size:20px;">
+     Althea Vidal Rabadon is a 3rd year BS Information Technology student at Ilocos Sur Polytechnic State college. A once
+	 dreamer that's still dreaming. Her father died when she was three and her mother needs to work in another city for them
+     to have enough support. Since then, she started living at her grandparents house, she literally grew up with her 
+     grandparents. Her dream course was Doctor of Veterinary Medicine, but because of financial problems and self-doubt, 
+	 she pursued Information Technology. 
+	 <br><br>
+	 She's not good at everything but she can always try, because someone says, trying is better than doing nothing. She can 
+	 go beyond her capabilities and always willing to learn. She doesn't have a good past but she's working really hard to 
+	 have a better present and make her future self proud. She survive the days she thought she couldn't, a tough woman who
+	 will soon create a name out there for herself.
+	 <br><br>
+	 
+  </p>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+<div class="footer">
+ <p>All Rights Reserved</p>
+</div>
+</body>
+</html> 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+  <h1>specTHEAcular</h1>
+  <img src="logo.png" alt="Logo" class="logo">
+  </div>
+<div class="sidenav">
+  <a class="active" href="home.html">Home</a>
+  <div class="dropdown">
+  <button class="dropbtn">PROFILE</button>
+  <div class="dropdown-content">
+    <a href="profile.html">Profile</a>
+    <a href="pictures.html">Pictures</a>
+    <a href="videos.html">Videos</a>
+  </div>
+  </div>
+  <a href="contacts.html">CONTACTS</a>
+  <a href="about.html">ABOUT</a>
+  <a href="news.html">NEWS</a>
+</div>
+
+<div class="main">
+<h2 style="font-size:30px;">This is Thea's Saved Videos!</h2>
+  <h3>"An image is a good way to remember things but you can find yourself smiling with the things that's moving"</h3>
+  <video width="240" height="240" controls>
+      <source src="video1.mp4" type=video/mp4>
+    </video>
+	<video width="240" height="240" controls>
+      <source src="video2.mp4" type=video/mp4>
+    </video>
+	<video width="240" height="240" controls>
+      <source src="video3.mp4" type=video/mp4>
+    </video>
+	<video width="240" height="240" controls>
+      <source src="video4.mp4" type=video/mp4>
+    </video>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+<div class="footer">
+ <p>All Rights Reserved</p>
+</div>
+</body>
+</html> 
